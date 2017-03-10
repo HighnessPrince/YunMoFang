@@ -1,0 +1,947 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F1FDC1EFDF812A838C98371 /* Pods_YunMoFang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F309E508E361FC3938E524C /* Pods_YunMoFang.framework */; };
+		B013155E1E481F2000054500 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B013155D1E481F2000054500 /* main.m */; };
+		B01315691E481F2000054500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B01315681E481F2000054500 /* Assets.xcassets */; };
+		B01315771E481F2000054500 /* YunMoFangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315761E481F2000054500 /* YunMoFangTests.m */; };
+		B01315821E481F2000054500 /* YunMoFangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315811E481F2000054500 /* YunMoFangUITests.m */; };
+		B01315911E4822EB00054500 /* YMFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315901E4822EB00054500 /* YMFAppDelegate.m */; };
+		B01315921E4822EB00054500 /* YMFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315901E4822EB00054500 /* YMFAppDelegate.m */; };
+		B01315931E4822EB00054500 /* YMFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315901E4822EB00054500 /* YMFAppDelegate.m */; };
+		B01315A51E48396500054500 /* YMFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315A41E48396500054500 /* YMFBaseViewController.m */; };
+		B01315A61E48396500054500 /* YMFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315A41E48396500054500 /* YMFBaseViewController.m */; };
+		B01315A71E48396500054500 /* YMFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315A41E48396500054500 /* YMFBaseViewController.m */; };
+		B01315AA1E4839ED00054500 /* YMFBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315A91E4839ED00054500 /* YMFBaseNavigationController.m */; };
+		B01315AB1E4839ED00054500 /* YMFBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315A91E4839ED00054500 /* YMFBaseNavigationController.m */; };
+		B01315AC1E4839ED00054500 /* YMFBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315A91E4839ED00054500 /* YMFBaseNavigationController.m */; };
+		B01315AF1E483A0D00054500 /* YMFBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315AE1E483A0D00054500 /* YMFBaseTabBarController.m */; };
+		B01315B01E483A0D00054500 /* YMFBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315AE1E483A0D00054500 /* YMFBaseTabBarController.m */; };
+		B01315B11E483A0D00054500 /* YMFBaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315AE1E483A0D00054500 /* YMFBaseTabBarController.m */; };
+		B01315B41E48428200054500 /* YMFGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315B31E48428200054500 /* YMFGuideViewController.m */; };
+		B01315B51E48428200054500 /* YMFGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315B31E48428200054500 /* YMFGuideViewController.m */; };
+		B01315B61E48428200054500 /* YMFGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315B31E48428200054500 /* YMFGuideViewController.m */; };
+		B01315B91E4842BE00054500 /* YMFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315B81E4842BE00054500 /* YMFLoginViewController.m */; };
+		B01315BA1E4842BE00054500 /* YMFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315B81E4842BE00054500 /* YMFLoginViewController.m */; };
+		B01315BB1E4842BF00054500 /* YMFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B01315B81E4842BE00054500 /* YMFLoginViewController.m */; };
+		B014E91E1E5C58B60096F0F8 /* YMFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B014E91D1E5C58B60096F0F8 /* YMFUser.m */; };
+		B014E91F1E5C58B60096F0F8 /* YMFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B014E91D1E5C58B60096F0F8 /* YMFUser.m */; };
+		B014E9201E5C58B60096F0F8 /* YMFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B014E91D1E5C58B60096F0F8 /* YMFUser.m */; };
+		B014E9261E5D3FBD0096F0F8 /* NSString+YMFEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = B014E9251E5D3FBD0096F0F8 /* NSString+YMFEncryption.m */; };
+		B014E9271E5D3FBD0096F0F8 /* NSString+YMFEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = B014E9251E5D3FBD0096F0F8 /* NSString+YMFEncryption.m */; };
+		B014E9281E5D3FBD0096F0F8 /* NSString+YMFEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = B014E9251E5D3FBD0096F0F8 /* NSString+YMFEncryption.m */; };
+		B06250991E49668F00C1B388 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B062509D1E49668F00C1B388 /* Localizable.strings */; };
+		B062509A1E49668F00C1B388 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B062509D1E49668F00C1B388 /* Localizable.strings */; };
+		B062509B1E49668F00C1B388 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B062509D1E49668F00C1B388 /* Localizable.strings */; };
+		B06250A61E49985A00C1B388 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B06250AA1E49985A00C1B388 /* InfoPlist.strings */; };
+		B06250A71E49985A00C1B388 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B06250AA1E49985A00C1B388 /* InfoPlist.strings */; };
+		B06250A81E49985A00C1B388 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B06250AA1E49985A00C1B388 /* InfoPlist.strings */; };
+		B06250B01E499CE700C1B388 /* YMFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250AF1E499CE700C1B388 /* YMFHTTPClient.m */; };
+		B06250B11E499CE700C1B388 /* YMFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250AF1E499CE700C1B388 /* YMFHTTPClient.m */; };
+		B06250B21E499CE700C1B388 /* YMFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250AF1E499CE700C1B388 /* YMFHTTPClient.m */; };
+		B06250B71E499E8600C1B388 /* YMFProgressHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250B61E499E8600C1B388 /* YMFProgressHUDManager.m */; };
+		B06250B81E499E8600C1B388 /* YMFProgressHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250B61E499E8600C1B388 /* YMFProgressHUDManager.m */; };
+		B06250B91E499E8600C1B388 /* YMFProgressHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250B61E499E8600C1B388 /* YMFProgressHUDManager.m */; };
+		B06250BE1E499ED600C1B388 /* YMFWeChat.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250BD1E499ED600C1B388 /* YMFWeChat.m */; };
+		B06250BF1E499ED600C1B388 /* YMFWeChat.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250BD1E499ED600C1B388 /* YMFWeChat.m */; };
+		B06250C01E499ED600C1B388 /* YMFWeChat.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250BD1E499ED600C1B388 /* YMFWeChat.m */; };
+		B06250C51E499F2900C1B388 /* YMFAlipay.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250C41E499F2900C1B388 /* YMFAlipay.m */; };
+		B06250C61E499F2900C1B388 /* YMFAlipay.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250C41E499F2900C1B388 /* YMFAlipay.m */; };
+		B06250C71E499F2900C1B388 /* YMFAlipay.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250C41E499F2900C1B388 /* YMFAlipay.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B01315731E481F2000054500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B01315511E481F2000054500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B01315581E481F2000054500;
+			remoteInfo = YunMoFang;
+		};
+		B013157E1E481F2000054500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B01315511E481F2000054500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B01315581E481F2000054500;
+			remoteInfo = YunMoFang;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F309E508E361FC3938E524C /* Pods_YunMoFang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YunMoFang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		806F4049B009A24D438FF733 /* Pods-YunMoFang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunMoFang.release.xcconfig"; path = "Pods/Target Support Files/Pods-YunMoFang/Pods-YunMoFang.release.xcconfig"; sourceTree = "<group>"; };
+		8AD63914CF9A9C8E38B69F52 /* Pods-YunMoFang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunMoFang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YunMoFang/Pods-YunMoFang.debug.xcconfig"; sourceTree = "<group>"; };
+		B01315591E481F2000054500 /* YunMoFang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YunMoFang.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B013155D1E481F2000054500 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B01315681E481F2000054500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B013156D1E481F2000054500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B01315721E481F2000054500 /* YunMoFangTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YunMoFangTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01315761E481F2000054500 /* YunMoFangTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YunMoFangTests.m; sourceTree = "<group>"; };
+		B01315781E481F2000054500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B013157D1E481F2000054500 /* YunMoFangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YunMoFangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01315811E481F2000054500 /* YunMoFangUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YunMoFangUITests.m; sourceTree = "<group>"; };
+		B01315831E481F2000054500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B013158F1E4822EB00054500 /* YMFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFAppDelegate.h; sourceTree = "<group>"; };
+		B01315901E4822EB00054500 /* YMFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFAppDelegate.m; sourceTree = "<group>"; };
+		B01315A31E48396500054500 /* YMFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFBaseViewController.h; sourceTree = "<group>"; };
+		B01315A41E48396500054500 /* YMFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFBaseViewController.m; sourceTree = "<group>"; };
+		B01315A81E4839ED00054500 /* YMFBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFBaseNavigationController.h; sourceTree = "<group>"; };
+		B01315A91E4839ED00054500 /* YMFBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFBaseNavigationController.m; sourceTree = "<group>"; };
+		B01315AD1E483A0D00054500 /* YMFBaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFBaseTabBarController.h; sourceTree = "<group>"; };
+		B01315AE1E483A0D00054500 /* YMFBaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFBaseTabBarController.m; sourceTree = "<group>"; };
+		B01315B21E48428200054500 /* YMFGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YMFGuideViewController.h; path = YunMoFang/Business/Guide/YMFGuideViewController.h; sourceTree = SOURCE_ROOT; };
+		B01315B31E48428200054500 /* YMFGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YMFGuideViewController.m; path = YunMoFang/Business/Guide/YMFGuideViewController.m; sourceTree = SOURCE_ROOT; };
+		B01315B71E4842BE00054500 /* YMFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFLoginViewController.h; sourceTree = "<group>"; };
+		B01315B81E4842BE00054500 /* YMFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFLoginViewController.m; sourceTree = "<group>"; };
+		B014E91C1E5C58B60096F0F8 /* YMFUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFUser.h; sourceTree = "<group>"; };
+		B014E91D1E5C58B60096F0F8 /* YMFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFUser.m; sourceTree = "<group>"; };
+		B014E9241E5D3FBD0096F0F8 /* NSString+YMFEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YMFEncryption.h"; sourceTree = "<group>"; };
+		B014E9251E5D3FBD0096F0F8 /* NSString+YMFEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YMFEncryption.m"; sourceTree = "<group>"; };
+		B06250941E4964B000C1B388 /* YMFAppearances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFAppearances.h; sourceTree = "<group>"; };
+		B062509E1E49669100C1B388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B06250A01E496EA200C1B388 /* YMFUserDefaultKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFUserDefaultKeys.h; sourceTree = "<group>"; };
+		B06250A11E496FD900C1B388 /* YunMoFang.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YunMoFang.entitlements; sourceTree = "<group>"; };
+		B06250AB1E49985B00C1B388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B06250AC1E4998B200C1B388 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		B06250AD1E4998B200C1B388 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B06250AE1E499CE700C1B388 /* YMFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFHTTPClient.h; sourceTree = "<group>"; };
+		B06250AF1E499CE700C1B388 /* YMFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFHTTPClient.m; sourceTree = "<group>"; };
+		B06250B51E499E8600C1B388 /* YMFProgressHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFProgressHUDManager.h; sourceTree = "<group>"; };
+		B06250B61E499E8600C1B388 /* YMFProgressHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFProgressHUDManager.m; sourceTree = "<group>"; };
+		B06250BC1E499ED600C1B388 /* YMFWeChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFWeChat.h; sourceTree = "<group>"; };
+		B06250BD1E499ED600C1B388 /* YMFWeChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFWeChat.m; sourceTree = "<group>"; };
+		B06250C31E499F2900C1B388 /* YMFAlipay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFAlipay.h; sourceTree = "<group>"; };
+		B06250C41E499F2900C1B388 /* YMFAlipay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFAlipay.m; sourceTree = "<group>"; };
+		B0C87A6B1E4C2A08007B08B2 /* YMFAppIDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFAppIDs.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B01315561E481F2000054500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F1FDC1EFDF812A838C98371 /* Pods_YunMoFang.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B013156F1E481F2000054500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B013157A1E481F2000054500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CED6C3F6F39FC216A4FA07D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AD63914CF9A9C8E38B69F52 /* Pods-YunMoFang.debug.xcconfig */,
+				806F4049B009A24D438FF733 /* Pods-YunMoFang.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D723F1D18630ED9BB3205FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F309E508E361FC3938E524C /* Pods_YunMoFang.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B01315501E481F2000054500 = {
+			isa = PBXGroup;
+			children = (
+				B013155B1E481F2000054500 /* YunMoFang */,
+				B01315751E481F2000054500 /* YunMoFangTests */,
+				B01315801E481F2000054500 /* YunMoFangUITests */,
+				B013155A1E481F2000054500 /* Products */,
+				6CED6C3F6F39FC216A4FA07D /* Pods */,
+				6D723F1D18630ED9BB3205FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B013155A1E481F2000054500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B01315591E481F2000054500 /* YunMoFang.app */,
+				B01315721E481F2000054500 /* YunMoFangTests.xctest */,
+				B013157D1E481F2000054500 /* YunMoFangUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B013155B1E481F2000054500 /* YunMoFang */ = {
+			isa = PBXGroup;
+			children = (
+				B01315941E4823D200054500 /* AppDelegate */,
+				B01315951E4823EA00054500 /* Business */,
+				B01315961E4823EA00054500 /* Categories */,
+				B01315971E4823EA00054500 /* Classes */,
+				B01315BC1E48433900054500 /* Protocols */,
+				B01315681E481F2000054500 /* Assets.xcassets */,
+				B013156D1E481F2000054500 /* Info.plist */,
+				B013155C1E481F2000054500 /* Supporting Files */,
+			);
+			path = YunMoFang;
+			sourceTree = "<group>";
+		};
+		B013155C1E481F2000054500 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B06250A11E496FD900C1B388 /* YunMoFang.entitlements */,
+				B013155D1E481F2000054500 /* main.m */,
+				B0C87A6B1E4C2A08007B08B2 /* YMFAppIDs.h */,
+				B06250941E4964B000C1B388 /* YMFAppearances.h */,
+				B06250A01E496EA200C1B388 /* YMFUserDefaultKeys.h */,
+				B06250AA1E49985A00C1B388 /* InfoPlist.strings */,
+				B062509D1E49668F00C1B388 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B01315751E481F2000054500 /* YunMoFangTests */ = {
+			isa = PBXGroup;
+			children = (
+				B01315761E481F2000054500 /* YunMoFangTests.m */,
+				B01315781E481F2000054500 /* Info.plist */,
+			);
+			path = YunMoFangTests;
+			sourceTree = "<group>";
+		};
+		B01315801E481F2000054500 /* YunMoFangUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B01315811E481F2000054500 /* YunMoFangUITests.m */,
+				B01315831E481F2000054500 /* Info.plist */,
+			);
+			path = YunMoFangUITests;
+			sourceTree = "<group>";
+		};
+		B01315941E4823D200054500 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B013158F1E4822EB00054500 /* YMFAppDelegate.h */,
+				B01315901E4822EB00054500 /* YMFAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B01315951E4823EA00054500 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				B01315A21E482A5000054500 /* Guide */,
+				B01315981E4824BC00054500 /* Cube */,
+				B01315991E4824BC00054500 /* Discovery */,
+				B013159A1E4824BC00054500 /* Login */,
+				B013159B1E4824BC00054500 /* Me */,
+				B013159C1E4824BC00054500 /* Message */,
+				B013159D1E4824BC00054500 /* Register */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		B01315961E4823EA00054500 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B014E9231E5D3F990096F0F8 /* NSString */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B01315971E4823EA00054500 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B013159E1E48250F00054500 /* Base */,
+				B01315A11E48250F00054500 /* Utility */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B01315981E4824BC00054500 /* Cube */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cube;
+			sourceTree = "<group>";
+		};
+		B01315991E4824BC00054500 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		B013159A1E4824BC00054500 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B01315B71E4842BE00054500 /* YMFLoginViewController.h */,
+				B01315B81E4842BE00054500 /* YMFLoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B013159B1E4824BC00054500 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		B013159C1E4824BC00054500 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		B013159D1E4824BC00054500 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		B013159E1E48250F00054500 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B013159F1E48250F00054500 /* Controllers */,
+				B01315A01E48250F00054500 /* Models */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B013159F1E48250F00054500 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B01315A31E48396500054500 /* YMFBaseViewController.h */,
+				B01315A41E48396500054500 /* YMFBaseViewController.m */,
+				B01315AD1E483A0D00054500 /* YMFBaseTabBarController.h */,
+				B01315AE1E483A0D00054500 /* YMFBaseTabBarController.m */,
+				B01315A81E4839ED00054500 /* YMFBaseNavigationController.h */,
+				B01315A91E4839ED00054500 /* YMFBaseNavigationController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B01315A01E48250F00054500 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B014E91C1E5C58B60096F0F8 /* YMFUser.h */,
+				B014E91D1E5C58B60096F0F8 /* YMFUser.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B01315A11E48250F00054500 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B06250C11E499EE000C1B388 /* Payment */,
+				B06250BA1E499EA400C1B388 /* Social */,
+				B06250B41E499E6900C1B388 /* HUD */,
+				B06250B31E499CFD00C1B388 /* Networking */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B01315A21E482A5000054500 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				B01315B21E48428200054500 /* YMFGuideViewController.h */,
+				B01315B31E48428200054500 /* YMFGuideViewController.m */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		B01315BC1E48433900054500 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B014E9231E5D3F990096F0F8 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				B014E9241E5D3FBD0096F0F8 /* NSString+YMFEncryption.h */,
+				B014E9251E5D3FBD0096F0F8 /* NSString+YMFEncryption.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		B06250B31E499CFD00C1B388 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B06250AE1E499CE700C1B388 /* YMFHTTPClient.h */,
+				B06250AF1E499CE700C1B388 /* YMFHTTPClient.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		B06250B41E499E6900C1B388 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				B06250B51E499E8600C1B388 /* YMFProgressHUDManager.h */,
+				B06250B61E499E8600C1B388 /* YMFProgressHUDManager.m */,
+			);
+			name = HUD;
+			sourceTree = "<group>";
+		};
+		B06250BA1E499EA400C1B388 /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				B06250BB1E499EB800C1B388 /* WeChat */,
+			);
+			name = Social;
+			sourceTree = "<group>";
+		};
+		B06250BB1E499EB800C1B388 /* WeChat */ = {
+			isa = PBXGroup;
+			children = (
+				B06250BC1E499ED600C1B388 /* YMFWeChat.h */,
+				B06250BD1E499ED600C1B388 /* YMFWeChat.m */,
+			);
+			name = WeChat;
+			sourceTree = "<group>";
+		};
+		B06250C11E499EE000C1B388 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				B06250C21E499EEE00C1B388 /* Alipay */,
+			);
+			name = Payment;
+			sourceTree = "<group>";
+		};
+		B06250C21E499EEE00C1B388 /* Alipay */ = {
+			isa = PBXGroup;
+			children = (
+				B06250C31E499F2900C1B388 /* YMFAlipay.h */,
+				B06250C41E499F2900C1B388 /* YMFAlipay.m */,
+			);
+			name = Alipay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B01315581E481F2000054500 /* YunMoFang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B01315861E481F2000054500 /* Build configuration list for PBXNativeTarget "YunMoFang" */;
+			buildPhases = (
+				F2E3087199467BC47410BBC0 /* [CP] Check Pods Manifest.lock */,
+				B01315551E481F2000054500 /* Sources */,
+				B01315561E481F2000054500 /* Frameworks */,
+				B01315571E481F2000054500 /* Resources */,
+				90B587377D8C2539EA20B978 /* [CP] Embed Pods Frameworks */,
+				68C149FFEFC2C05FF3319EA2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YunMoFang;
+			productName = YunMoFang;
+			productReference = B01315591E481F2000054500 /* YunMoFang.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B01315711E481F2000054500 /* YunMoFangTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B01315891E481F2000054500 /* Build configuration list for PBXNativeTarget "YunMoFangTests" */;
+			buildPhases = (
+				B013156E1E481F2000054500 /* Sources */,
+				B013156F1E481F2000054500 /* Frameworks */,
+				B01315701E481F2000054500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B01315741E481F2000054500 /* PBXTargetDependency */,
+			);
+			name = YunMoFangTests;
+			productName = YunMoFangTests;
+			productReference = B01315721E481F2000054500 /* YunMoFangTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B013157C1E481F2000054500 /* YunMoFangUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B013158C1E481F2000054500 /* Build configuration list for PBXNativeTarget "YunMoFangUITests" */;
+			buildPhases = (
+				B01315791E481F2000054500 /* Sources */,
+				B013157A1E481F2000054500 /* Frameworks */,
+				B013157B1E481F2000054500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B013157F1E481F2000054500 /* PBXTargetDependency */,
+			);
+			name = YunMoFangUITests;
+			productName = YunMoFangUITests;
+			productReference = B013157D1E481F2000054500 /* YunMoFangUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B01315511E481F2000054500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Yunyun Network Technology Co.,Ltd";
+				TargetAttributes = {
+					B01315581E481F2000054500 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DHK2YTB2CT;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					B01315711E481F2000054500 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DHK2YTB2CT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B01315581E481F2000054500;
+					};
+					B013157C1E481F2000054500 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DHK2YTB2CT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B01315581E481F2000054500;
+					};
+				};
+			};
+			buildConfigurationList = B01315541E481F2000054500 /* Build configuration list for PBXProject "YunMoFang" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = B01315501E481F2000054500;
+			productRefGroup = B013155A1E481F2000054500 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B01315581E481F2000054500 /* YunMoFang */,
+				B01315711E481F2000054500 /* YunMoFangTests */,
+				B013157C1E481F2000054500 /* YunMoFangUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B01315571E481F2000054500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01315691E481F2000054500 /* Assets.xcassets in Resources */,
+				B06250A61E49985A00C1B388 /* InfoPlist.strings in Resources */,
+				B06250991E49668F00C1B388 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B01315701E481F2000054500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B062509A1E49668F00C1B388 /* Localizable.strings in Resources */,
+				B06250A71E49985A00C1B388 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B013157B1E481F2000054500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B062509B1E49668F00C1B388 /* Localizable.strings in Resources */,
+				B06250A81E49985A00C1B388 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68C149FFEFC2C05FF3319EA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YunMoFang/Pods-YunMoFang-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90B587377D8C2539EA20B978 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YunMoFang/Pods-YunMoFang-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2E3087199467BC47410BBC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B01315551E481F2000054500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06250BE1E499ED600C1B388 /* YMFWeChat.m in Sources */,
+				B014E9261E5D3FBD0096F0F8 /* NSString+YMFEncryption.m in Sources */,
+				B01315AF1E483A0D00054500 /* YMFBaseTabBarController.m in Sources */,
+				B01315A51E48396500054500 /* YMFBaseViewController.m in Sources */,
+				B01315B91E4842BE00054500 /* YMFLoginViewController.m in Sources */,
+				B01315B41E48428200054500 /* YMFGuideViewController.m in Sources */,
+				B01315911E4822EB00054500 /* YMFAppDelegate.m in Sources */,
+				B06250B01E499CE700C1B388 /* YMFHTTPClient.m in Sources */,
+				B013155E1E481F2000054500 /* main.m in Sources */,
+				B06250B71E499E8600C1B388 /* YMFProgressHUDManager.m in Sources */,
+				B06250C51E499F2900C1B388 /* YMFAlipay.m in Sources */,
+				B01315AA1E4839ED00054500 /* YMFBaseNavigationController.m in Sources */,
+				B014E91E1E5C58B60096F0F8 /* YMFUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B013156E1E481F2000054500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06250BF1E499ED600C1B388 /* YMFWeChat.m in Sources */,
+				B014E9271E5D3FBD0096F0F8 /* NSString+YMFEncryption.m in Sources */,
+				B01315B01E483A0D00054500 /* YMFBaseTabBarController.m in Sources */,
+				B01315A61E48396500054500 /* YMFBaseViewController.m in Sources */,
+				B01315BA1E4842BE00054500 /* YMFLoginViewController.m in Sources */,
+				B01315B51E48428200054500 /* YMFGuideViewController.m in Sources */,
+				B01315771E481F2000054500 /* YunMoFangTests.m in Sources */,
+				B06250B11E499CE700C1B388 /* YMFHTTPClient.m in Sources */,
+				B01315921E4822EB00054500 /* YMFAppDelegate.m in Sources */,
+				B06250B81E499E8600C1B388 /* YMFProgressHUDManager.m in Sources */,
+				B06250C61E499F2900C1B388 /* YMFAlipay.m in Sources */,
+				B01315AB1E4839ED00054500 /* YMFBaseNavigationController.m in Sources */,
+				B014E91F1E5C58B60096F0F8 /* YMFUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B01315791E481F2000054500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B06250C01E499ED600C1B388 /* YMFWeChat.m in Sources */,
+				B014E9281E5D3FBD0096F0F8 /* NSString+YMFEncryption.m in Sources */,
+				B01315B11E483A0D00054500 /* YMFBaseTabBarController.m in Sources */,
+				B01315A71E48396500054500 /* YMFBaseViewController.m in Sources */,
+				B01315BB1E4842BF00054500 /* YMFLoginViewController.m in Sources */,
+				B01315B61E48428200054500 /* YMFGuideViewController.m in Sources */,
+				B01315821E481F2000054500 /* YunMoFangUITests.m in Sources */,
+				B06250B21E499CE700C1B388 /* YMFHTTPClient.m in Sources */,
+				B01315931E4822EB00054500 /* YMFAppDelegate.m in Sources */,
+				B06250B91E499E8600C1B388 /* YMFProgressHUDManager.m in Sources */,
+				B06250C71E499F2900C1B388 /* YMFAlipay.m in Sources */,
+				B01315AC1E4839ED00054500 /* YMFBaseNavigationController.m in Sources */,
+				B014E9201E5C58B60096F0F8 /* YMFUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B01315741E481F2000054500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B01315581E481F2000054500 /* YunMoFang */;
+			targetProxy = B01315731E481F2000054500 /* PBXContainerItemProxy */;
+		};
+		B013157F1E481F2000054500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B01315581E481F2000054500 /* YunMoFang */;
+			targetProxy = B013157E1E481F2000054500 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B062509D1E49668F00C1B388 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B062509E1E49669100C1B388 /* en */,
+				B06250AD1E4998B200C1B388 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B06250AA1E49985A00C1B388 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B06250AB1E49985B00C1B388 /* en */,
+				B06250AC1E4998B200C1B388 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B01315841E481F2000054500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B01315851E481F2000054500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B01315871E481F2000054500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AD63914CF9A9C8E38B69F52 /* Pods-YunMoFang.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = YunMoFang/YunMoFang.entitlements;
+				DEVELOPMENT_TEAM = DHK2YTB2CT;
+				INFOPLIST_FILE = YunMoFang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunyun.YunMoFang;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B01315881E481F2000054500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 806F4049B009A24D438FF733 /* Pods-YunMoFang.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = YunMoFang/YunMoFang.entitlements;
+				DEVELOPMENT_TEAM = DHK2YTB2CT;
+				INFOPLIST_FILE = YunMoFang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunyun.YunMoFang;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B013158A1E481F2000054500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DHK2YTB2CT;
+				INFOPLIST_FILE = YunMoFangTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunyun.YunMoFangTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YunMoFang.app/YunMoFang";
+			};
+			name = Debug;
+		};
+		B013158B1E481F2000054500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DHK2YTB2CT;
+				INFOPLIST_FILE = YunMoFangTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunyun.YunMoFangTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YunMoFang.app/YunMoFang";
+			};
+			name = Release;
+		};
+		B013158D1E481F2000054500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DHK2YTB2CT;
+				INFOPLIST_FILE = YunMoFangUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunyun.YunMoFangUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YunMoFang;
+			};
+			name = Debug;
+		};
+		B013158E1E481F2000054500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DHK2YTB2CT;
+				INFOPLIST_FILE = YunMoFangUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunyun.YunMoFangUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YunMoFang;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B01315541E481F2000054500 /* Build configuration list for PBXProject "YunMoFang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01315841E481F2000054500 /* Debug */,
+				B01315851E481F2000054500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B01315861E481F2000054500 /* Build configuration list for PBXNativeTarget "YunMoFang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01315871E481F2000054500 /* Debug */,
+				B01315881E481F2000054500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B01315891E481F2000054500 /* Build configuration list for PBXNativeTarget "YunMoFangTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B013158A1E481F2000054500 /* Debug */,
+				B013158B1E481F2000054500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B013158C1E481F2000054500 /* Build configuration list for PBXNativeTarget "YunMoFangUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B013158D1E481F2000054500 /* Debug */,
+				B013158E1E481F2000054500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B01315511E481F2000054500 /* Project object */;
+}

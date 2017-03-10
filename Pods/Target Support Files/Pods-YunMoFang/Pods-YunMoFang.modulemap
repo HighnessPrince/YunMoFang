@@ -1,0 +1,6 @@
+framework module Pods_YunMoFang {
+  umbrella header "Pods-YunMoFang-umbrella.h"
+
+  export *
+  module * { export * }
+}
