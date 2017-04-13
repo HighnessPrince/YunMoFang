@@ -8,16 +8,10 @@
 
 #import "YMFHTTPClient.h"
 #import <AFNetworking/AFNetworking.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
 
 #import "NSString+YMFEncryption.h"
-#import "YMFUserDefaultKeys.h"
-
-#if DEBUG
-static NSString *const kBaseURL = @"https://www.yycube.com/yunmofang_dev";
-#else
-static NSString *const kBaseURL = @"https://www.yycube.com/yunmofang";
-#endif
+#import "YMFUserDefaultsKeys.h"
+#import "YMFParams.h"
 
 #define kCommonParameterPlatformValue (@(1))
 
@@ -44,7 +38,8 @@ static NSString *const kExceptionalResponseDataDomain = @"YMFHTTPClientException
     static YMFHTTPClient *sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSURL *baseURL = [NSURL URLWithString:kBaseURL];
+        NSURL *baseURL = [NSURL URLWithString:YMFBaseURLString];
+        ;
         sharedClient = [[YMFHTTPClient alloc] initWithBaseURL:baseURL];
         sharedClient.requestSerializer = [AFJSONRequestSerializer serializer];
         sharedClient.requestSerializer.timeoutInterval = kHTTPRequestTimeoutInterval;
@@ -67,59 +62,47 @@ static NSString *const kExceptionalResponseDataDomain = @"YMFHTTPClientException
 }
 
 #pragma mark - POST
-- (RACSignal *)postToPath:(NSString *)path withSpecificParameters:(id)specificParameters progress:(void (^)(NSProgress *progress))uploadProgress{
-    @weakify(self);
-    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        @strongify(self);
-        NSDictionary *assembledParameters = [self p_assembledParametersWithSpecificParameters:specificParameters];
-        [super POST:path parameters:assembledParameters progress:uploadProgress success:^(NSURLSessionDataTask *task, id responseObject) {
-            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-            NSError *error = nil;
-            if ([responseObject isKindOfClass:[NSDictionary class]]) {
-                NSLog(@"%@, response data: %@", path, responseObject);
-                NSNumber *responseCode = responseObject[kResponseCodeKey];
-                if (![responseCode isEqualToNumber:@0]) {
-                    NSString *responseMessage = responseObject[kResponseMessageKey];
-                    error = [NSError errorWithDomain:kExceptionalResponseCodeDomain code:responseCode.integerValue userInfo:@{NSLocalizedDescriptionKey : responseMessage}];
-                    NSLog(@"HTTP client error:%@, localized description:%@", error, error.localizedDescription);
-                    [subscriber sendError:error];
-                    if ([_delegate respondsToSelector:@selector(clientRecievedException:description:)]) {
-                        YMFHTTPClientException exception = error.code;
-                        [_delegate clientRecievedException:exception description:error.localizedDescription];
-                    }
-                }
-                else{
-                    [subscriber sendNext:responseObject];
-                    [subscriber sendCompleted];
+- (NSURLSessionDataTask *)postToPath:(NSString *)path specificParameters:(id)specificParameters completionHandler:(void(^)(NSDictionary *responseData, NSError *error))completionHandler{
+    return [self postToPath:path specificParameters:specificParameters progress:nil completionHandler:completionHandler];
+}
+
+- (NSURLSessionDataTask *)postToPath:(NSString *)path specificParameters:(id)specificParameters progress:(void (^)(NSProgress *progress))uploadProgress completionHandler:(void(^)(NSDictionary *responseData, NSError *error))completionHandler{
+    NSDictionary *assembledParameters = [self p_assembledParametersWithSpecificParameters:specificParameters];
+    return [super POST:path parameters:assembledParameters progress:uploadProgress success:^(NSURLSessionDataTask *task, id responseObject) {
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        NSError *error = nil;
+        if ([responseObject isKindOfClass:[NSDictionary class]]) {
+            NSLog(@"%@, response data: %@", path, responseObject);
+            NSNumber *responseCode = responseObject[kResponseCodeKey];
+            if (![responseCode isEqualToNumber:@0]) {
+                NSString *responseMessage = responseObject[kResponseMessageKey];
+                error = [NSError errorWithDomain:kExceptionalResponseCodeDomain code:responseCode.integerValue userInfo:@{NSLocalizedDescriptionKey : responseMessage}];
+                NSLog(@"HTTP client error:%@, localized description:%@", error, error.localizedDescription);
+                completionHandler ? completionHandler(nil, error) : nil;
+                if ([_delegate respondsToSelector:@selector(clientRecievedException:description:)]) {
+                    YMFHTTPClientException exception = error.code;
+                    [_delegate clientRecievedException:exception description:error.localizedDescription];
                 }
             }
             else{
-                error = [NSError errorWithDomain:kExceptionalResponseDataDomain code:-1 userInfo:@{NSLocalizedDescriptionKey : @"response data is not an expected instance of NSDictionary class"}];
-                NSLog(@"HTTP client error:%@, localized description:%@", error, error.localizedDescription);
-                [subscriber sendError:error];
+                completionHandler ? completionHandler(responseObject, nil) : nil;
             }
-            
-        } failure:^(NSURLSessionDataTask *task, NSError *error) {
-            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-            NSData *errorData = error.userInfo[@"com.alamofire.serialization.response.error.data"];
-            if (errorData) {
-                NSString *errorInfo = [[NSString alloc] initWithData:errorData encoding:NSUTF8StringEncoding];
-                NSLog(@"%@", errorInfo);
-            }
+        }
+        else{
+            error = [NSError errorWithDomain:kExceptionalResponseDataDomain code:-1 userInfo:@{NSLocalizedDescriptionKey : @"response data is not an expected instance of NSDictionary class"}];
             NSLog(@"HTTP client error:%@, localized description:%@", error, error.localizedDescription);
-            [subscriber sendError:error];
-        }];
+            completionHandler(nil, error);
+        }
         
-        return nil;
-    }];
-}
-
-- (RACSignal *)postToPath:(NSString *)path withSpecificParameters:(id)specificParameters{
-    @weakify(self);
-    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        @strongify(self);
-        [self postToPath:path withSpecificParameters:specificParameters progress:nil];
-        return nil;
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+        NSData *errorData = error.userInfo[@"com.alamofire.serialization.response.error.data"];
+        if (errorData) {
+            NSString *errorInfo = [[NSString alloc] initWithData:errorData encoding:NSUTF8StringEncoding];
+            NSLog(@"%@", errorInfo);
+        }
+        NSLog(@"HTTP client error:%@, localized description:%@", error, error.localizedDescription);
+        completionHandler(nil, error);
     }];
 }
 
@@ -155,7 +138,8 @@ static NSString *const kExceptionalResponseDataDomain = @"YMFHTTPClientException
                                                                             @"mac" : MACAddress,
                                                                             @"language" : localLanguage,
                                                                             @"country" : country,
-                                                                            @"version" : iPhoneOSVersion}];}
+                                                                            @"version" : iPhoneOSVersion}];
+    }
     NSString *timestamp = [NSString stringWithFormat:@"%lld", [@(floor([[NSDate date] timeIntervalSince1970] * 1000)) longLongValue]];
     NSString *randomNumber = [[NSString alloc] initWithFormat:@"%06d", arc4random_uniform(1000000)];
     _commonParameters[@"random"] = randomNumber;

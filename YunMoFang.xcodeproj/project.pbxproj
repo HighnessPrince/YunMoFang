@@ -54,6 +54,7 @@
 		B06250C51E499F2900C1B388 /* YMFAlipay.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250C41E499F2900C1B388 /* YMFAlipay.m */; };
 		B06250C61E499F2900C1B388 /* YMFAlipay.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250C41E499F2900C1B388 /* YMFAlipay.m */; };
 		B06250C71E499F2900C1B388 /* YMFAlipay.m in Sources */ = {isa = PBXBuildFile; fileRef = B06250C41E499F2900C1B388 /* YMFAlipay.m */; };
+		B0BCD6721E9F0ECF00EDD7F0 /* YMFHTTPClient+RACExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BCD6711E9F0ECF00EDD7F0 /* YMFHTTPClient+RACExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +106,6 @@
 		B014E9251E5D3FBD0096F0F8 /* NSString+YMFEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YMFEncryption.m"; sourceTree = "<group>"; };
 		B06250941E4964B000C1B388 /* YMFAppearances.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFAppearances.h; sourceTree = "<group>"; };
 		B062509E1E49669100C1B388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		B06250A01E496EA200C1B388 /* YMFUserDefaultKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFUserDefaultKeys.h; sourceTree = "<group>"; };
 		B06250A11E496FD900C1B388 /* YunMoFang.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YunMoFang.entitlements; sourceTree = "<group>"; };
 		B06250AB1E49985B00C1B388 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B06250AC1E4998B200C1B388 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -118,6 +118,10 @@
 		B06250BD1E499ED600C1B388 /* YMFWeChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFWeChat.m; sourceTree = "<group>"; };
 		B06250C31E499F2900C1B388 /* YMFAlipay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFAlipay.h; sourceTree = "<group>"; };
 		B06250C41E499F2900C1B388 /* YMFAlipay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMFAlipay.m; sourceTree = "<group>"; };
+		B0BCD66D1E9F0EB200EDD7F0 /* YMFParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFParams.h; sourceTree = "<group>"; };
+		B0BCD66E1E9F0EB200EDD7F0 /* YMFUserDefaultsKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFUserDefaultsKeys.h; sourceTree = "<group>"; };
+		B0BCD6701E9F0ECF00EDD7F0 /* YMFHTTPClient+RACExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YMFHTTPClient+RACExtensions.h"; sourceTree = "<group>"; };
+		B0BCD6711E9F0ECF00EDD7F0 /* YMFHTTPClient+RACExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YMFHTTPClient+RACExtensions.m"; sourceTree = "<group>"; };
 		B0C87A6B1E4C2A08007B08B2 /* YMFAppIDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMFAppIDs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +197,7 @@
 				B01315951E4823EA00054500 /* Business */,
 				B01315961E4823EA00054500 /* Categories */,
 				B01315971E4823EA00054500 /* Classes */,
+				B0BCD66F1E9F0ECF00EDD7F0 /* Extensions */,
 				B01315BC1E48433900054500 /* Protocols */,
 				B01315681E481F2000054500 /* Assets.xcassets */,
 				B013156D1E481F2000054500 /* Info.plist */,
@@ -207,8 +212,9 @@
 				B06250A11E496FD900C1B388 /* YunMoFang.entitlements */,
 				B013155D1E481F2000054500 /* main.m */,
 				B0C87A6B1E4C2A08007B08B2 /* YMFAppIDs.h */,
+				B0BCD66D1E9F0EB200EDD7F0 /* YMFParams.h */,
 				B06250941E4964B000C1B388 /* YMFAppearances.h */,
-				B06250A01E496EA200C1B388 /* YMFUserDefaultKeys.h */,
+				B0BCD66E1E9F0EB200EDD7F0 /* YMFUserDefaultsKeys.h */,
 				B06250AA1E49985A00C1B388 /* InfoPlist.strings */,
 				B062509D1E49668F00C1B388 /* Localizable.strings */,
 			);
@@ -436,6 +442,23 @@
 			name = Alipay;
 			sourceTree = "<group>";
 		};
+		B0BCD66F1E9F0ECF00EDD7F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B0BCD6731E9F0ED400EDD7F0 /* YMFHTTPClient */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B0BCD6731E9F0ED400EDD7F0 /* YMFHTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				B0BCD6701E9F0ECF00EDD7F0 /* YMFHTTPClient+RACExtensions.h */,
+				B0BCD6711E9F0ECF00EDD7F0 /* YMFHTTPClient+RACExtensions.m */,
+			);
+			name = YMFHTTPClient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -633,6 +656,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0BCD6721E9F0ECF00EDD7F0 /* YMFHTTPClient+RACExtensions.m in Sources */,
 				B06250BE1E499ED600C1B388 /* YMFWeChat.m in Sources */,
 				B014E9261E5D3FBD0096F0F8 /* NSString+YMFEncryption.m in Sources */,
 				B01315AF1E483A0D00054500 /* YMFBaseTabBarController.m in Sources */,
@@ -772,6 +796,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				YMF_BASE_URL_STRING = "https://www.yycube.com/yunmofang_dev";
 			};
 			name = Debug;
 		};
@@ -815,6 +840,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				YMF_BASE_URL_STRING = "https://www.yycube.com/yunmofang";
 			};
 			name = Release;
 		};

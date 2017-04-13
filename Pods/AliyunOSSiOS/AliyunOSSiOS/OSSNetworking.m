@@ -299,7 +299,7 @@
             if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
                 uploadSessionConfig = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:self.configuration.backgroundSessionIdentifier];
             } else {
-                uploadSessionConfig = [NSURLSessionConfiguration backgroundSessionConfiguration:self.configuration.backgroundSessionIdentifier];
+                uploadSessionConfig = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:self.configuration.backgroundSessionIdentifier];
             }
         } else {
             uploadSessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];

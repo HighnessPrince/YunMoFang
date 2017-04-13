@@ -32,7 +32,7 @@ typedef enum : NSUInteger {
 - (void)commonParametersSetUserID:(NSNumber *)userID;
 - (void)commonParametersSetToken:(NSString *)token;
 
-- (RACSignal *)postToPath:(NSString *)path withSpecificParameters:(id)specificParameters;
-- (RACSignal *)postToPath:(NSString *)path withSpecificParameters:(id)specificParameters progress:(void (^)(NSProgress *progress))uploadProgress;
+- (NSURLSessionDataTask *)postToPath:(NSString *)path specificParameters:(id)specificParameters completionHandler:(void(^)(NSDictionary *responseData, NSError *error))completionHandler;
+- (NSURLSessionDataTask *)postToPath:(NSString *)path specificParameters:(id)specificParameters progress:(void (^)(NSProgress *progress))uploadProgress completionHandler:(void(^)(NSDictionary *responseData, NSError *error))completionHandler;
 
 @end

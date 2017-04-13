@@ -10,4 +10,5 @@ target ‘YunMoFang’ do
   pod 'AliyunOSSiOS', '~> 2.5.3'
   pod 'MJRefresh', '~> 3.1.12'
   pod 'Mantle', '~> 2.1.0'
+  pod 'AsyncDisplayKit', '~> 1.9.90'
 end
