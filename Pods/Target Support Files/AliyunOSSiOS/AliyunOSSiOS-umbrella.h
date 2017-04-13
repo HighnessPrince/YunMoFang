@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 
+#import "AliyunOSSiOS.h"
 #import "OSSClient.h"
 #import "OSSCompat.h"
 #import "OSSDefine.h"

@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AsyncDisplayKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FCUUID.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -35,6 +40,16 @@
 			<false/>
 		</dict>
 		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>PINRemoteImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -67,7 +82,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0E3A0683C6468E076660C386DBB4A842</key>
+		<key>147C4D6909D08EDDCD36E2C84B2C409C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,12 +97,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>39090D59ADEA7C9944476CC8CB5BB0AE</key>
+		<key>302891B39A65503174928629F7626794</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>41A8F723ED3266E60829A08077C963BC</key>
+		<key>4C3AC4449FB2C65964DBD34E582FFD10</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F55189113AE45EC7C421A050A369FF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,7 +127,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A5F502264647BC25F0EED265EC6C5635</key>
+		<key>81CF0B648FD0A2E1F69ACD3587A55B83</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8910390D8E20CBA74DDD953EFF0ED904</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8D8EBAED574894AF9B096F2BFBA6FC88</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,7 +152,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F860632D2C14F179B87DE6F29BC6689A</key>
+		<key>F987BB7F1421C6DF46AF069A8789ED26</key>
 		<dict>
 			<key>primary</key>
 			<true/>
